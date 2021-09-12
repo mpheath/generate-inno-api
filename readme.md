@@ -38,9 +38,9 @@ The files will be written into a folder named *output* in the same directory. So
 ## Usage
 
  1. Get [main.zip](https://github.com/jrsoftware/issrc/archive/refs/heads/main.zip) source file from the *jrsoftware/issrc* repository. If you have the repository cloned then that could be a good alternative to use.
- 2. Extract into the same directory as *gen_inno_api.py*.
+ 2. Extract into the same directory as *generate_inno_api.py*.
  3. Rename *issrc-main* to *issrc* if needed, as a cloned repository is named the later and *issrc* is what the script is setup to use.
- 4. Customize the settings at the top of *gen_inno_api.py* to your preference.
+ 4. Customize the settings at the top of *generate_inno_api.py* to your preference.
  5. Execute the script.
 
 
