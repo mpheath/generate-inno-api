@@ -116,12 +116,12 @@ def get_section_lists():
 
                 # CopyMode deprecated as of IS 3.0.5 (2002-12-16).
                 if section == 'files':
-                    if name in ('CopyMode',):
+                    if name == 'CopyMode':
                         continue
 
                 # Section run and uninstallrun share parameters except these.
                 if section == 'run':
-                    if name in ('RunOnceId',):
+                    if name == 'RunOnceId':
                         continue
 
                 if section == 'uninstallrun':
@@ -141,7 +141,7 @@ def get_section_lists():
                     if section == 'uninstallrun':
                         if name in ('postinstall', 'runasoriginaluser',
                                     'skipifnotsilent', 'skipifsilent',
-                                    'unchecked', ):
+                                    'unchecked'):
                             continue
 
                     # Section Run postinstall flag states isreadme
@@ -262,7 +262,6 @@ def get_event_functions():
                     word[2] = '()'
 
                 word.append(dd)
-
                 words.append(word)
 
     return words
