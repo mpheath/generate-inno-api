@@ -22,10 +22,6 @@ settings = {
     # Create clean xml files for inspection.
     'clean_xml_files': False,
 
-    # INI parameter style of String also used by Registry ValueType argument string.
-    # Registry used more often than INI section so could be set to False for no style.
-    'keep_parameter_string': False,
-
     # Make styles like make-scite-collection.
     'update_styles': False,
 
@@ -624,10 +620,6 @@ if __name__ == '__main__':
 
         # Parameters.
         words = dic['parameters']
-
-        if not settings['keep_parameter_string']:
-            if 'String' in words:
-                words.remove('String')
 
         w.write('# Parameters\n'
                 'keywords3.$(file.patterns.inno)=\\\n' +
