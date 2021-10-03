@@ -215,7 +215,7 @@ def get_constants():
             words.add(item)
 
     # Add some prefixes.
-    for item in ('{%', '{#'):
+    for item in ('{%', '{#', '{code:'):
         words.add(item)
 
     words = sorted(words, key=str.lower)
