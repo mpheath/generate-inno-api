@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!python3
 
 '''Generate inno.properties and several inno*.api files for use with SciTE.
 
